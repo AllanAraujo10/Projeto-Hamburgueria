@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./styles/output.css" rel="stylesheet">
+    <title>Projeto_Hamburgueria</title>
+</head>
+
+<body>
+    <header class=" w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center ">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="assets/Logo.png" alt="imgLogo_header"
+                class="w-45 h-40 rounded-full md:text-3xl  hover:scale-110 hover:-rotate-2 duration-300 ">
+
+            <h1 class="text-3xl mt-4 mb-2 font-bold text-white md:text-3xl">GigaBurger</h1>
+
+            <Samp class="text-white text-bold mb-5 font-bold md:text-3xl">A explosão de sabor que você respeita</Samp>
+
+            <div class="bg-green-500 px-6 py-2 rounded-lg md:text-3xl hover:scale-110 duration-200" id="deta-span">
+                <samp class=" text-white font-bold">
+                    Seg á Dom - 18:20 as 22:00
+                </samp>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <h2 class="text-3xl md:text-4xl font-bold text-center mt-9 mb-6">
+        Conheça nosso menu
+    </h2>
+
+    <div id="menu">
+        <main class=" grid grid-cols-1 md:grid-cols-2  gap-7  md:gap-10  mx-auto max-w-7xl px-2 mb-16  ">
+
+            <div class="flex gap-2">
+
+                <img src="assets/hamb-1.png" alt="X-Burguer Clássico"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">X-Burguer Clássico</p>
+                    <p class="text-sm ">Hambúrguer grelhado com queijo derretido, maionese caseira e pão macio, perfeito
+                        para um lanche rápido e saboroso.</p>
+
+
+                    <div class=" flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">
+                            R$ 38,50
+                        </p>
+
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn hover:scale-110 duration-200"
+                            data-name="X-Burguer Clássico" data-price="38.50">
+                            <i class="fa fa-cart-plus text-lg text-white "></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+                <img src="assets/hamb-2.png" alt="X-Bacon Crocante"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">X-Bacon Crocante</p>
+                    <p class="text-sm "> Combinação deliciosa de hambúrguer, queijo e bacon crocante no pão selado,
+                        servido com molho barbecue artesanal.</p>
+
+
+                    <div class=" flex items-center gap-2 justify-between mt-3">
+
+                        <p class="font-bold text-lg">
+                            R$ 38,50
+                        </p>
+
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn hover:scale-110 duration-200"
+                            data-name="X-Bacon Crocante" data-price="38.50">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+
+                <img src="assets/hamb-3.png" alt="X-Frango Cremoso"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">X-Frango Cremoso</p>
+                    <p class="text-sm "> Frango desfiado com catupiry no pão levemente tostado, ótimo para quem prefere
+                        um lanche mais suave e cremoso.</p>
+
+
+                    <div class=" flex items-center gap-2 justify-between mt-3">
+
+                        <p class="font-bold text-lg">
+                            R$ 35,00
+                        </p>
+
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn hover:scale-110 duration-200"
+                            data-name="X-Frango Cremoso" data-price="35.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+                <img src="assets/hamb-4.png" alt="X-Calabresa Picante"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">X-Calabresa Picante</p>
+                    <p class="text-sm ">Calabresa acebolada com queijo e molho especial no pão de hambúrguer, um lanche
+                        com sabor marcante e picante.</p>
+
+
+                    <div class=" flex items-center gap-2 justify-between mt-3">
+
+                        <p class="font-bold text-lg">
+                            R$ 36,00
+                        </p>
+
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn hover:scale-110 duration-200"
+                            data-name="X-Calabresa Picante" data-price="36.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+                <img src="assets/hamb-5.png" alt="Cheddar Burguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Cheddar Burguer</p>
+                    <p class="text-sm ">Hambúrguer com cheddar cremoso e cebola caramelizada no pão selado, ideal para
+                        os amantes de queijo e sabor intenso.</p>
+
+
+                    <div class=" flex items-center gap-2 justify-between mt-3">
+
+                        <p class="font-bold text-lg">
+                            R$ 39,00
+                        </p>
+
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn hover:scale-110 duration-200"
+                            data-name="Cheddar Burguer" data-price="39.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+                <img src="assets/hamb-6.png" alt="X-Egg Completo"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">X-Egg Completo</p>
+                    <p class="text-sm ">Hambúrguer com ovo frito, queijo, presunto e salada no pão especial, completo
+                        para matar qualquer tipo de fome.</p>
+
+
+                    <div class=" flex items-center gap-2 justify-between mt-3">
+
+                        <p class="font-bold text-lg">
+                            R$ 32,00
+                        </p>
+
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn hover:scale-110 duration-200"
+                            data-name="X-Egg Completo" data-price="32.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+                <img src="assets/hamb-7.png" alt="Cebola Empanada Crocante"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Cebola Empanada Crocante</p>
+                    <p class="text-sm ">Anéis de cebola empanados e fritos até dourar, servidos no pão com queijo,
+                        alface e molho especial da casa.</p>
+
+
+                    <div class=" flex items-center gap-2 justify-between mt-3">
+
+                        <p class="font-bold text-lg">
+                            R$ 45,00
+                        </p>
+
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn hover:scale-110 duration-200"
+                            data-name="Cebola Empanada Crocante" data-price="45.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+                <img src="assets/hamb-8.png" alt="X-Veggie Natural"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">X-Veggie Natural</p>
+                    <p class="text-sm ">Hambúrguer vegetal com alface, tomate, cenoura e molho verde no pão integral,
+                        uma opção leve, saudável e deliciosa.</p>
+
+
+                    <div class=" flex items-center gap-2 justify-between mt-3">
+
+                        <p class="font-bold text-lg">
+                            R$ 52,00
+                        </p>
+
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn hover:scale-110 duration-200"
+                            data-name="X-Veggie Natural" data-price="52.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <div class="mx-auto max-w-7xl px-3 my-2 ">
+            <h2 class="text-3xl md:text-4xl font-bold text-center">
+                Bebidas
+            </h2>
+        </div>
+
+        <div class=" grid grid-cols-1 md:grid-cols-2  gap-7  md:gap-10  mx-auto max-w-7xl px-2 mb-16">
+
+            <div class="flex gap-2 p-4">
+                <img src="assets/refri-1.png" alt="Coca lata"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Coca lata</p>
+                    <p class="text-sm ">Refrescante e com sabor inconfundível, servida bem gelada para matar a sede e
+                        completar seu lanche.</p>
+
+
+                    <div class=" flex items-center gap-2 justify-between mt-3">
+
+                        <p class="font-bold text-lg">
+                            R$ 7,00
+                        </p>
+
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn hover:scale-110 duration-200"
+                            data-name="Coca lata" data-price="7.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+                <img src="assets/refri-2.png" alt="Guaraná Antarctica"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Guaraná Antarctica</p>
+                    <p class="text-sm ">Tradicional e brasileiro, com borbulhas na medida certa, perfeito para
+                        acompanhar qualquer lanche com muito sabor.</p>
+
+
+                    <div class=" flex items-center gap-2 justify-between mt-3">
+
+                        <p class="font-bold text-lg">
+                            R$ 6,00
+                        </p>
+
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn hover:scale-110 duration-200"
+                            data-name="Guaraná Antarctica" data-price="6.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2 mb-6">
+                <img src="assets/refri-3.png" alt="Suco Natural de Laranja"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Suco Natural de Laranja</p>
+                    <p class="text-sm ">Suco espremido na hora, sem açúcar nem conservantes, ideal para quem busca uma
+                        opção leve e saudável.</p>
+
+
+                    <div class=" flex items-center gap-2 justify-between mt-3">
+
+                        <p class="font-bold text-lg">
+                            R$ 16,00
+                        </p>
+
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn hover:scale-110 duration-200"
+                            data-name="Suco Natural de Laranja" data-price="16.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2 mb-6">
+                <img src="assets/refri-4.png" alt="Chá Gelado de Limão"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Chá Gelado de Limão</p>
+                    <p class="text-sm ">Refrescante e levemente cítrico, servido bem gelado, excelente para quem prefere
+                        algo suave e sem gás.</p>
+
+                    <div class=" flex items-center gap-2 justify-between mt-3">
+
+                        <p class="font-bold text-lg">
+                            R$ 10,00
+                        </p>
+
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn hover:scale-110 duration-200"
+                            data-name="Chá Gelado de Limão" data-price="10.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--Modal-->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+
+            <h2 class="text-center font-bold text-2xl mb-2">
+                Meu carrinho
+            </h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"> </div>
+
+            <p class=" font-bold">
+                Total: <samp id="cart-total">0.00</samp>
+            </p>
+
+            <p class="font-bold mt-4 ">
+                Endereço de entrega:
+            </p>
+
+            <input type="text" placeholder="Digite seu endereço completo..." id="address"
+                class="w-full border-2 p-1 rounded my-1 " />
+
+            <p class="text-red-500 hidden" id="address-warn">
+                Digite seu endereço completo!
+            </p>
+
+            <div class=" flex  items-center justify-between mt-5 w-full ">
+
+                <button id="close-modal-btn" class="bg-red-500 text-white px-4 py-1 rounded ">
+                    fechar
+                </button>
+
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded ">
+                    Finalizar pedido
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer class="w-full bg-goldenrod py-3 fixed bottom-0 z-40 flex items-center justify-center mt-4">
+
+        <button class="flex items-center gap-2 text-white  text-2xl md:text-3xl" id="cart-btn">
+            (<samp id="cart-count">0</samp>)
+
+            Veja meu carrinho
+
+            <i class="fa fa-cart-plus text-lg  md:text-3xl"></i>
+
+        </button>
+
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
